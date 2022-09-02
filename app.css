@@ -1,0 +1,124 @@
+html {
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cars {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    width: 330px;
+    padding: 0;
+    border-radius: 1em;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3em;
+    margin: 28px 0;
+}
+
+.sedans {
+
+    background-color: hsl(31, 77%, 52%);
+    padding: 31px;
+    border-radius: 1em 1em 0 0;
+}
+
+.suv {
+
+    background-color: hsl(184, 100%, 22%);
+    padding: 31px;
+}
+
+.luxury {
+
+    background-color: hsl(179, 100%, 13%);
+    padding: 31px;
+    border-radius: 0 0 1em 1em;
+}
+
+p {
+    padding-right: 25px;
+    line-height: 1.5em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-learn {
+    text-align: center;
+    display: block;
+    width: 100px;
+    background-color: white;
+    border-radius: 1.7em;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.btn-sedans {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-suv {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-learn:hover, .btn-learn:active {
+    background-color: transparent;
+    outline: 1px solid white;
+    color: white;
+}
+
+img {
+    width: 64px;
+    height: 40px;
+}
+
+@media (min-width:1440px) {
+    .cars {
+        flex-direction: row;
+        align-items: center;
+        align-self: center;
+        width: 950px;
+    }
+
+    .sedans {
+        border-radius: 0.5em 0 0 0.5em;
+    }
+
+    .luxury {
+        border-radius: 0 0.5em 0.5em 0;
+    }
+
+    p {
+        padding-bottom: 40px;
+        padding-right: 33px;
+        line-height: 25px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+    }
+
+    .btn-learn {
+        margin-bottom: 10px;
+    }
+
+}
